@@ -1,0 +1,22 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Page Count</th>
+            <th scope="col">Excerpt</th>
+            <th scope="col">updated At</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let book of books">
+            <th scope="row" scope="row">{{book.ID}}</th>
+            <td>{{book.Title}}</td>
+            <td>{{book.Description}}</td>
+            <td>{{book.PageCount}}</td>
+            <td>{{book.Excerpt}}</td>
+            <td>{{book.updatedAt}}</td>
+          </tr>
+    </tbody>
+</table>
