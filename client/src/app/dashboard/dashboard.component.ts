@@ -15,6 +15,7 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
     this.loadBooks();
+    console.log("inside init");
   }
 
   loadBooks(): void {
