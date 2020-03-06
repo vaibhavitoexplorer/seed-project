@@ -20,4 +20,8 @@ export class BookService {
   getBooks(): any {
     return this.httpClient.get(this.apiURL).pipe(map((response: any) => response));
   }
+
+  addBook(book): any {
+    return this.httpClient.post(this.apiURL, book).pipe(map((response: any) => response));
+  }
 }
