@@ -1,0 +1,52 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Page Count</th>
+            <th scope="col">Excerpt</th>
+            <th scope="col">updated At</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let book of books">
+            <th scope="row" scope="row">{{book.ID}}</th>
+            <td>{{book.Title}}</td>
+            <td>{{book.Description}}</td>
+            <td>{{book.PageCount}}</td>
+            <td>{{book.Excerpt}}</td>
+            <td>{{book.updatedAt}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addBook">
+    Add Book
+</button>
+
+<!-- The Modal -->
+<div class="modal" id="addBook">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Add Book</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                Modal body..
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal" (click)="addBook()">Submit</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
