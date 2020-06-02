@@ -1,24 +1,44 @@
-<!-- The Modal -->
-<div class="modal" id="myModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          Modal body..
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        </div>
-        
-      </div>
-    </div>
-  </div>
+<h2 mat-dialog-title>Add Book</h2>
+<mat-dialog-content class="mat-typography">
+  <form id="add-book">
+    <p>
+      <mat-form-field>
+        <input matInput placeholder="Title" [(ngModel)]="Title" name="Title" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Publish Date" [(ngModel)]="PublishDate" type="date" name="PublishDate"
+          required>
+      </mat-form-field>
+    </p>
+
+    <p>
+      <mat-form-field class="example-full-width">
+        <mat-label>Description</mat-label>
+        <textarea matInput placeholder="Description.." name="Description" required [(ngModel)]="Description"></textarea>
+      </mat-form-field>
+    </p>
+
+    <p>
+      <mat-form-field>
+        <input matInput placeholder="Page Count" [(ngModel)]="PageCount" type="number" name="PageCount"
+          required>
+      </mat-form-field>
+    </p>
+
+    <p>
+      <mat-form-field>
+        <input matInput placeholder="Excerpt" [(ngModel)]="Excerpt" type="text" name="Excerpt"
+          required>
+      </mat-form-field>
+    </p>
+
+    <p *ngIf="error" class="error">
+      {{ error }}
+    </p>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial color="primary" (click)="signIn()">
+    Sign In</button>
+</mat-dialog-actions>

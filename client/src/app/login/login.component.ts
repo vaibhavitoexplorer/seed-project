@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+
+import { Router } from '@angular/router';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-login',
@@ -7,22 +9,23 @@ import { FormGroup, FormControl } from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  
-  form: FormGroup = new FormGroup({
-    name: new FormControl(''),
-    email: new FormControl(''),
-    mobileNumber: new FormControl(''),
-    password: new FormControl(''),
-  });
+  username: string;
+  password: string;
 
-  submit() {
-    if (this.form.valid) {
+  constructor(private router: Router, private userService: UserService) { }
+  
+  ngOnInit() {}
+
+  signIn(): void {
+    try {
+
+    } catch {
       
     }
+    if (this.username == 'admin' && this.password == 'admin') {
+      this.router.navigate(["dashboard"]);
+    } else {
+      alert("Invalid credentials");
+    }
   }
-  constructor() { }
-
-  ngOnInit() {
-  }
-
 }

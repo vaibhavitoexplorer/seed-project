@@ -6,12 +6,15 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AddBookComponent } from './add-book/add-book.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CustomMaterialModule } from './custom-material/custom-material.module';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { LandingComponent } from './landing/landing.component';
+import { UserComponent } from './user/user.component';
+import { HeaderComponent } from './header/header.component';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -20,15 +23,19 @@ import { LandingComponent } from './landing/landing.component';
     AddBookComponent,
     LoginComponent,
     SignupComponent,
-    LandingComponent
+    LandingComponent,
+    UserComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule,
-    CustomMaterialModule
+    FormsModule,
+    CustomMaterialModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
