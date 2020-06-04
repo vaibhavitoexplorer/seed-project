@@ -13,6 +13,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { MatPaginatorModule } from '@angular/material';
 
 
 
@@ -30,7 +32,8 @@ import { MatListModule } from '@angular/material/list';
     MatProgressSpinnerModule,
     MatSliderModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatPaginatorModule
     ],
     exports: [
     CommonModule,
@@ -45,7 +48,9 @@ import { MatListModule } from '@angular/material/list';
      MatProgressSpinnerModule,
      MatSliderModule,
      MatSidenavModule,
-     MatListModule
+     MatListModule,
+     FlexLayoutModule,
+     MatPaginatorModule
      ],
 })
 export class CustomMaterialModule { }

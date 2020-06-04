@@ -4,3 +4,16 @@
 @import url('../../../../client/src/assets/css/animate.css');
 @import url('../../../../client/src/assets/css/bootstrap.css');
 @import url('../../../../client/src/assets/css/main.css');
+
+.logo {
+    width: 38%;
+}
+
+header > div > div > div > div.right-bar.d-flex.align-items-center 
+> nav > ul > li > a {
+    color: black;
+}
+
+h1.text-uppercase.text-white, p.text-uppercase.text-white {
+    color: black !important;
+}

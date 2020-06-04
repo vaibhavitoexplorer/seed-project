@@ -2,17 +2,13 @@
 <mat-dialog-content class="mat-typography">
   <form id="add-book">
     <p>
-      <mat-form-field>
+      <mat-form-field class="form-field-width">
         <input matInput placeholder="Title" [(ngModel)]="Title" name="Title" required>
-      </mat-form-field>
-      <mat-form-field>
-        <input matInput placeholder="Publish Date" [(ngModel)]="PublishDate" type="date" name="PublishDate"
-          required>
       </mat-form-field>
     </p>
 
     <p>
-      <mat-form-field class="example-full-width">
+      <mat-form-field class="example-full-width form-field-width">
         <mat-label>Description</mat-label>
         <textarea matInput placeholder="Description.." name="Description" required [(ngModel)]="Description"></textarea>
       </mat-form-field>
@@ -20,15 +16,17 @@
 
     <p>
       <mat-form-field>
-        <input matInput placeholder="Page Count" [(ngModel)]="PageCount" type="number" name="PageCount"
-          required>
+        <input matInput placeholder="Page Count" [(ngModel)]="PageCount" type="number" name="PageCount" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Publish Date" [(ngModel)]="PublishDate" type="date" name="PublishDate" required>
       </mat-form-field>
     </p>
 
     <p>
-      <mat-form-field>
-        <input matInput placeholder="Excerpt" [(ngModel)]="Excerpt" type="text" name="Excerpt"
-          required>
+      <mat-form-field class="example-full-width form-field-width">
+        <mat-label>Excerpt</mat-label>
+        <textarea matInput placeholder="Excerpt.." name="Excerpt" required [(ngModel)]="Excerpt"></textarea>
       </mat-form-field>
     </p>
 
@@ -38,7 +36,7 @@
   </form>
 </mat-dialog-content>
 <mat-dialog-actions align="end">
-  <button mat-button mat-dialog-close>Cancel</button>
-  <button mat-button [mat-dialog-close]="true" cdkFocusInitial color="primary" (click)="signIn()">
+  <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
+  <button mat-raised-button [mat-dialog-close]="true" [disabled]="true" color="primary" (click)="signIn()">
     Sign In</button>
 </mat-dialog-actions>

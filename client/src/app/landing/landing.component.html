@@ -5,29 +5,21 @@
         <div class="container">
             <div class="header-content d-flex justify-content-between align-items-center">
                 <div class="logo">
-                    <a href="#top" class="smooth"><img src="assets/img/logo.png" alt=""></a>
+                    <a href="#top" class="smooth"><img src="assets/img/logo.png" alt="" style="width: 50%;"></a>
                 </div>
                 <div class="right-bar d-flex align-items-center">
                     <nav class="d-flex align-items-center">
                         <ul class="main-menu">
-                            <li><a href="#top">Home</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#protfolio">Portfolio</a></li>
-                            <li><a href="#team">Team</a></li>
-                            <li><a href="#blog">Blog</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="home/#products">Products</a></li>
+                            <li><a href="home/#categories">Categories</a></li>
+                            <li><a href="home/#authors">Authors</a></li>
+                            <li><a href="home/#publishers">Publishers</a></li>
+                            <li><a href="home/#contact">Contact</a></li>
+                            <li><a href="signin">Sign In</a></li>
+                            <li><a href="signup">Sign Up</a></li>
                         </ul>
                         <a href="#" class="mobile-btn"><span class="lnr lnr-menu"></span></a>
                     </nav>
-                    <div class="search relative">
-                        <span class="lnr lnr-magnifier"></span>
-                            <input type="text" placeholder="Search here">
-                            <button class="search-submit"><span class="lnr lnr-magnifier"></span></button>
-                    </div>
-                    <div class="header-social d-flex align-items-center">
-                        <a href="http://localhost:4200/signin"><i>Sign In</i></a>
-                        <a href="http://localhost:4200/signup"><i>Sign Up</i></a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -38,12 +30,11 @@
 <section class="banner-area relative">
     <div class="overlay overlay-bg"></div>
     <div class="container">
-        <div class="row fullscreen justify-content-center align-items-center">
+        <div class="row fullscreen justify-content-center align-items-center" style="height: 881px;">
             <div class="col-lg-8">
                 <div class="banner-content text-center">
-                    <p class="text-uppercase text-white">We work hard, we result perfect</p>
-                    <h1 class="text-uppercase text-white">Crafting Digital Agency Experiences</h1>
-                    <a href="#" class="primary-btn banner-btn">Explore Us</a>
+                    <!-- <p class="text-uppercase text-white">We work hard, we result perfect</p>
+                    <h1 class="text-uppercase text-white">Crafting Digital Agency Experiences</h1> -->
                 </div>
             </div>
         </div>
@@ -105,7 +96,7 @@
 </section>
 <!-- End About Area -->
 <!-- Start Product Area -->
-<section id="services" class="title-bg section-full">
+<section id="products" class="title-bg section-full">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
@@ -164,79 +155,8 @@
     </div>
 </section>
 <!-- End Product Area -->
-<!-- Start Progress Bar Area -->
-<div class="container pt-150">
-    <div class="row">
-        <div class="col-lg-3 col-sm-6 d-flex justify-content-center">
-            <div class="list text-center">
-                <div class="list-item">
-                    <div class="progressBar progressBar--animateNone" data-progress="80">
-                        <svg class="progressBar-contentCircle" viewBox="0 0 200 200">
-                            <circle transform="rotate(-90, 100, 100)" class="progressBar-background" cx="100" cy="100"
-                                r="95" />
-                            <circle transform="rotate(-90, 100, 100)" class="progressBar-circle" cx="100" cy="100"
-                                r="95" />
-                        </svg>
-                        <span class="progressBar-percentage progressBar-percentage-count"></span>
-                    </div>
-                </div>
-                <p class="text-uppercase">Web Design</p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 d-flex justify-content-center">
-            <div class="list text-center">
-                <div class="list-item">
-                    <div class="progressBar progressBar--animateText" data-progress="75">
-                        <svg class="progressBar-contentCircle" viewBox="0 0 200 200">
-                            <circle transform="rotate(-90, 100, 100)" class="progressBar-background" cx="100" cy="100"
-                                r="95" />
-                            <circle transform="rotate(-90, 100, 100)" class="progressBar-circle" cx="100" cy="100"
-                                r="95" />
-                        </svg>
-                        <span class="progressBar-percentage progressBar-percentage-count"></span>
-                    </div>
-                </div>
-                <p class="text-uppercase">UI/UX Design</p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 d-flex justify-content-center">
-            <div class="list text-center">
-                <div class="list-item">
-                    <div class="progressBar progressBar--animateCircle" data-progress="60">
-                        <svg class="progressBar-contentCircle" viewBox="0 0 200 200">
-                            <circle transform="rotate(-90, 100, 100)" class="progressBar-background" cx="100" cy="100"
-                                r="95" />
-                            <circle transform="rotate(-90, 100, 100)" class="progressBar-circle" cx="100" cy="100"
-                                r="95" />
-                        </svg>
-                        <span class="progressBar-percentage progressBar-percentage-count"></span>
-                    </div>
-                </div>
-                <p class="text-uppercase">Mobile App</p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 d-flex justify-content-center">
-            <div class="list text-center">
-                <div class="list-item">
-                    <div class="progressBar progressBar--animateAll" data-progress="90">
-                        <svg class="progressBar-contentCircle" viewBox="0 0 200 200">
-                            <!-- on défini le l'angle et le centre de rotation du cercle -->
-                            <circle transform="rotate(-90, 100, 100)" class="progressBar-background" cx="100" cy="100"
-                                r="95" />
-                            <circle transform="rotate(-90, 100, 100)" class="progressBar-circle" cx="100" cy="100"
-                                r="95" />
-                        </svg>
-                        <span class="progressBar-percentage progressBar-percentage-count"></span>
-                    </div>
-                </div>
-                <p class="text-uppercase">Web Development</p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Progress Bar Area -->
 <!-- Start shuffle Area -->
-<section id="protfolio" class="section-full">
+<section id="categories" class="section-full">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
@@ -328,14 +248,14 @@
     </div>
 </section>
 <!-- End shuffle Area -->
-<!-- Start Team member Area -->
-<section id="team" class="pb-150">
+<!-- Start authors member Area -->
+<section id="authors" class="pb-150">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="product-area-title text-center">
-                    <p class="text-uppercase">Creative People</p>
-                    <h2 class="h1">Team work builds trust and <br> trust builds growth</h2>
+                    <p class="text-uppercase">Authors</p>
+                    <h2 class="h1">We write to taste life twice, <br> in the moment and in retrospect</h2>
                 </div>
             </div>
         </div>
@@ -396,7 +316,7 @@
                     </div>
                     <div class="desc text-center">
                         <h5 class="text-uppercase"><a href="#">Dora Walker</a></h5>
-                        <p>Senior Core Developer</p>
+                        <p>Senior Core Writer</p>
                     </div>
                 </div>
             </div>
@@ -416,184 +336,16 @@
                     </div>
                     <div class="desc text-center">
                         <h5 class="text-uppercase"><a href="#">Lena Keller</a></h5>
-                        <p>Creative Content Developer</p>
+                        <p>Creative Content Writer</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- End Team member Area -->
-
-<!-- Start Digital Studio -->
-<section class="section-full studio-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="studio-content">
-                    <p class="text-uppercase text-white">We create top class designs</p>
-                    <h2 class="h1 text-white text-uppercase mb-20">A Digital Studio Crafting <br> Tech Business</h2>
-                    <p class="text-white mb-30">Computer users and programmers have become so accustomed to using
-                        Windows, even for the changing capabilities and the appearances of the graphical interface of
-                        the versions, therefore it has remained Microsoft’s product. Although, Lycoris, Red Hat,
-                        Mandrake,</p>
-                    <a href="#" class="primary-btn text-white d-inline-flex align-items-center">Start Business<span
-                            class="lnr lnr-arrow-right"></span></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Digital Studio -->
-<!-- Start Pricing Area -->
-<section class="section-full">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="product-area-title text-center">
-                    <p class="text-uppercase">Creative People</p>
-                    <h2 class="h1">Team work builds trust and <br> trust builds growth</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="single-pricing-table">
-                    <div class="top">
-                        <div class="head text-center">
-                            <span class="lnr lnr-shirt"></span><br>
-                            <h5 class="text-white text-uppercase">Standard</h5>
-                        </div>
-                        <div class="package text-center">
-                            <div class="price">£199</div>
-                            <span class="text-white">Per month</span>
-                        </div>
-                    </div>
-
-                    <div class="bottom text-center">
-                        <ul class="feature text-center">
-                            <li>2.5 GB Photos</li>
-                            <li>Secure Online Transfer</li>
-                            <li>Unlimited Styles</li>
-                            <li>Customer Service</li>
-                            <li>Manual Backup</li>
-                        </ul>
-                        <a href="#" class="primary-btn text-uppercase d-inline-flex align-items-center">Purchase<span
-                                class="lnr lnr-arrow-right"></span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="single-pricing-table">
-                    <div class="top">
-                        <div class="head text-center">
-                            <span class="lnr lnr-shirt"></span><br>
-                            <h5 class="text-white text-uppercase">Business</h5>
-                        </div>
-                        <div class="package text-center">
-                            <div class="price">£399</div>
-                            <span class="text-white">Per month</span>
-                        </div>
-                    </div>
-
-                    <div class="bottom text-center">
-                        <ul class="feature text-center">
-                            <li>2.5 GB Photos</li>
-                            <li>Secure Online Transfer</li>
-                            <li>Unlimited Styles</li>
-                            <li>Customer Service</li>
-                            <li>Manual Backup</li>
-                        </ul>
-                        <a href="#" class="primary-btn text-uppercase d-inline-flex align-items-center">Purchase<span
-                                class="lnr lnr-arrow-right"></span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="single-pricing-table">
-                    <div class="top">
-                        <div class="head text-center">
-                            <span class="lnr lnr-apartment"></span>
-                            <h5 class="text-white text-uppercase">Ultimate</h5>
-                        </div>
-                        <div class="package text-center">
-                            <div class="price">£499</div>
-                            <span class="text-white">Per month</span>
-                        </div>
-                    </div>
-
-                    <div class="bottom text-center">
-                        <ul class="feature text-center">
-                            <li>2.5 GB Photos</li>
-                            <li>Secure Online Transfer</li>
-                            <li>Unlimited Styles</li>
-                            <li>Customer Service</li>
-                            <li>Manual Backup</li>
-                        </ul>
-                        <a href="#" class="primary-btn text-uppercase d-inline-flex align-items-center">Purchase<span
-                                class="lnr lnr-arrow-right"></span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Pricing Area -->
-<!-- Start Testimonial Area -->
-<section class="section-full gray-bg">
-    <div class="container">
-        <div class="active-testimonial-carousel">
-            <div class="single-testimonial">
-                <img src="assets/img/ts1.png" class="img-circle" alt="">
-                <p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-                    speaker, projector, hardware and more. laptop accessory </p>
-                <div class="author text-center">
-                    <h6 class="text-uppercase"><a href="#">Mark Alviro Wiens</a></h6>
-                    <span>CEO at Google</span>
-                </div>
-            </div>
-            <div class="single-testimonial">
-                <img src="assets/img/ts2.png" class="img-circle" alt="">
-                <p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-                    speaker, projector, hardware and more. laptop accessory </p>
-                <div class="author text-center">
-                    <h6 class="text-uppercase"><a href="#">Mark Alviro Wiens</a></h6>
-                    <span>CEO at Google</span>
-                </div>
-            </div>
-            <div class="single-testimonial">
-                <img src="assets/img/ts3.png" class="img-circle" alt="">
-                <p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-                    speaker, projector, hardware and more. laptop accessory </p>
-                <div class="author text-center">
-                    <h6 class="text-uppercase"><a href="#">Mark Alviro Wiens</a></h6>
-                    <span>CEO at Google</span>
-                </div>
-            </div>
-            <div class="single-testimonial">
-                <img src="assets/img/ts3.png" class="img-circle" alt="">
-                <p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-                    speaker, projector, hardware and more. laptop accessory </p>
-                <div class="author text-center">
-                    <h6 class="text-uppercase"><a href="#">Mark Alviro Wiens</a></h6>
-                    <span>CEO at Google</span>
-                </div>
-            </div>
-            <div class="single-testimonial">
-                <img src="assets/img/ts3.png" class="img-circle" alt="">
-                <p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-                    speaker, projector, hardware and more. laptop accessory </p>
-                <div class="author text-center">
-                    <h6 class="text-uppercase"><a href="#">Mark Alviro Wiens</a></h6>
-                    <span>CEO at Google</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Testimonial Area -->
+<!-- End authors member Area -->
 <!-- Start Publish Area -->
-<section id="blog" class="section-full">
+<section id="publishers" class="section-full">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
@@ -710,46 +462,33 @@
                 </div>
             </div>
             <div class="col-lg-6 mt-30">
-                    <div class="single-input color-2 mb-10">
-                        <input type="text" name="fname" placeholder="Full Name" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Full Name'" required>
-                    </div>
-                    <div class="single-input color-2 mb-10">
-                        <input type="email" name="email" placeholder="Email Address"
-                            pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Email Address'" required>
-                    </div>
-                    <div class="single-input color-2 mb-10">
-                        <input type="text" name="subject" placeholder="Subject" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Subject'" required>
-                    </div>
+                <div class="single-input color-2 mb-10">
+                    <input type="text" name="fname" placeholder="Full Name" onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'Full Name'" required>
+                </div>
+                <div class="single-input color-2 mb-10">
+                    <input type="email" name="email" placeholder="Email Address"
+                        pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'Email Address'" required>
+                </div>
+                <div class="single-input color-2 mb-10">
+                    <input type="text" name="subject" placeholder="Subject" onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'Subject'" required>
+                </div>
 
-                    <div class="single-input color-2 mb-10">
-                        <textarea name="message" placeholder="Type your message here..." onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Type your message here...'" required></textarea>
-                    </div>
-                    <div class="d-flex justify-content-end"><button
-                            class="mt-10 primary-btn d-inline-flex text-uppercase align-items-center">Send Message<span
-                                class="lnr lnr-arrow-right"></span></button></div>
-                    <div class="alert"></div>
+                <div class="single-input color-2 mb-10">
+                    <textarea name="message" placeholder="Type your message here..." onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'Type your message here...'" required></textarea>
+                </div>
+                <div class="d-flex justify-content-end"><button
+                        class="mt-10 primary-btn d-inline-flex text-uppercase align-items-center">Send Message<span
+                            class="lnr lnr-arrow-right"></span></button></div>
+                <div class="alert"></div>
             </div>
         </div>
     </div>
 </section>
 <!-- End Contact Area -->
-<!-- Start Cta Area -->
-<section class="cta-area">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 d-flex no-flex-xs justify-content-between align-items-center">
-                <h5 class="text-uppercase text-white">Not yet convinced with our quality?</h5>
-                <a href="#" class="primary-btn d-inline-flex text-uppercase text-white align-items-center">Explore
-                    Services<span class="lnr lnr-arrow-right"></span></a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Cta Area -->
 <footer class="section-full">
     <div class="container">
         <div class="row">
@@ -766,15 +505,14 @@
                     <h6 class="text-white text-uppercase mb-20">Navigation Links</h6>
                     <div class="d-flex">
                         <ul class="footer-nav">
-                            <li><a href="#">Home</a></li>
                             <li><a href="#">Features</a></li>
-                            <li><a href="#">Services</a></li>
+                            <li><a href="#">products</a></li>
                             <li><a href="#">Portfolio</a></li>
                         </ul>
                         <ul class="ml-30 footer-nav">
-                            <li><a href="#">Team</a></li>
+                            <li><a href="#">authors</a></li>
                             <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">publishers</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
@@ -787,13 +525,13 @@
                     </p>
                     <div id="mc_embed_signup">
                         <input type="email" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''"
-                                onblur="this.placeholder = 'Email address'" required>
-                            <div style="position: absolute; left: -5000px;">
-                                <input type="text" name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="">
-                            </div>
-                            <button type="submit" class="newsletter-btn" name="subscribe"><span
-                                    class="lnr lnr-location"></span></button>
-                            <div class="info"></div>
+                            onblur="this.placeholder = 'Email address'" required>
+                        <div style="position: absolute; left: -5000px;">
+                            <input type="text" name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="">
+                        </div>
+                        <button type="submit" class="newsletter-btn" name="subscribe"><span
+                                class="lnr lnr-location"></span></button>
+                        <div class="info"></div>
                     </div>
                 </div>
             </div>
