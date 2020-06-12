@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-add-book',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-book.component.css']
 })
 export class AddBookComponent implements OnInit {
+  @ViewChild('signInFormRef', { static: true }) signInFormRef: NgForm;
 
-  constructor() { }
+  constructor() { 
+    console.log("inside the con");
+  }
 
   ngOnInit() {
   }
-
+  
 }

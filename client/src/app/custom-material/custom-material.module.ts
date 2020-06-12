@@ -14,7 +14,8 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { FlexLayoutModule } from "@angular/flex-layout";
-import { MatPaginatorModule } from '@angular/material';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 
 
@@ -33,7 +34,8 @@ import { MatPaginatorModule } from '@angular/material';
     MatSliderModule,
     MatSidenavModule,
     MatListModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatCheckboxModule
     ],
     exports: [
     CommonModule,
@@ -50,7 +52,8 @@ import { MatPaginatorModule } from '@angular/material';
      MatSidenavModule,
      MatListModule,
      FlexLayoutModule,
-     MatPaginatorModule
+     MatPaginatorModule,
+     MatCheckboxModule
      ],
 })
 export class CustomMaterialModule { }
