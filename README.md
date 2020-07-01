@@ -1,2 +1,2 @@
-# seed-project
-A seed project for MEAN stack
+# Book Store
+A seed project for any MEAN stack project

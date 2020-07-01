@@ -2,6 +2,7 @@ import Book = require("../dataaccess/mongoose/Book");
 import BookRepository = require("../dataaccess/repository/BookRepository");
 
 class BookService {
+    public apiUrl = "https://fakerestapi.azurewebsites.net/api/Books";
 
     private bookRepository: BookRepository;
 

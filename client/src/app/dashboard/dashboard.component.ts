@@ -13,19 +13,16 @@ import {SelectionModel} from '@angular/cdk/collections';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  displayedColumns: string[] = ['ID', 'Title', 'Description', 'PageCount', 'Excerpt'];
+  displayedColumns: string[] = ['select', 'Title', 'Description', 'PageCount', 'Excerpt'];
+  date = new Date();
 
-  books: any;
+  books: MatTableDataSource<any>;
   addBookForm;
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
   selection = new SelectionModel<any>(true, []);
 
-  constructor(private bookService: BookService,
-    private router: Router, private formBuilder: FormBuilder) {
-    this.addBookForm = this.formBuilder.group({
-      ID: '',
-      Title: ''
-    });
+  constructor(private bookService: BookService) {
+    
   }
 
   ngOnInit() {
@@ -34,20 +31,20 @@ export class DashboardComponent implements OnInit {
 
   loadBooks(): void {
     this.bookService.getBooks()
-      .subscribe((books: Book[]) => {
-        this.books = new MatTableDataSource<Book>(books);
+      .subscribe((books: any) => {
+        this.books = new MatTableDataSource<any>(books);
         this.books.paginator = this.paginator;
       });
   }
 
-  addBook(): void {
+  /* addBook(): void {
     this.bookService.addBook(this.addBook)
-      .subscribe(books => { 
+      .subscribe(books: any => { 
         this.books = books
       },() => {
         console.log("call is completed");
       });
-  }
+  } */
 
   /** Whether the number of selected elements matches the total number of rows. */
   isAllSelected() {
@@ -71,4 +68,8 @@ export class DashboardComponent implements OnInit {
     return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.ID + 1}`;
   }
 
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.books.filter = filterValue.trim().toLowerCase();
+  }
 }

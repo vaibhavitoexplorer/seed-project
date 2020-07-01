@@ -1,21 +1,22 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { map } from "rxjs/operators";
-import { Book } from 'src/app/book.interface';
 
 import { environment } from '../environments/environment';
-import { Observable } from 'rxjs';
+import { executeForTest } from 'dr-books-module';
+import { bookController } from 'dr-books-module';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BookService {
 
-  constructor(private httpClient: HttpClient) { 
+  constructor(private httpClient: HttpClient) {
 
   }
 
   getBooks() {
+    let test = new bookController();
+    //test.getAllBooks();
     return this.httpClient.get(`${environment.apiURL}books/`);
   }
 
